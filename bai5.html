@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var n = prompt('Enter n:');
+    var a,b,c,sum;
+    a = 0;
+    b = 1;
+    c;
+    sum = 1;
+    for(i = 0; i < n - 2; i++){
+        c = b +a;
+        a = b;
+        b = c;
+        sum += c;
+        document.write(c + ',');
+    }
+    document.write("<br/>" + 'Tong= ' + sum);
+</script>
+</body>
+</html>

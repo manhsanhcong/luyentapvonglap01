@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      var min = parseInt(prompt('Enter the min value'));
+      var max = parseInt(prompt('Enter the max value'));
+      var randomValue = Math.floor((Math.rondom() * (max - min) + min));
+      for ( var i = 0; i < 3; i++){
+          var guessNumber = parseInt(prompt('Enter a value'));
+          if (guessNumber === randomValue){
+              alert('Congras');
+              break;
+          } else {
+              if (randomValue < guessNumber){
+                  alert('Value is less than' + guessNumber);
+              } else {
+                  alert('Value is greater than' + guessNumber);
+              }
+          }
+      }
+  </script>
+</body>
+</html>
